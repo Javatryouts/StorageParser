@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Storage>
+    <Box id="19">
+        <Box id="1">
+            <Item id="1"/>
+            <Item color="red" id="2"/>
+            <Box id="3">
+                <Item id="3" color="red"/>
+                <Item id="4" color="black"/>
+                <Item id="7" color="red"/>
+                <Box id="23">
+                    <Item id="23" color="red"/>
+                    <Item id="24" color="black"/>
+                    <Item id="27" color="red"/>
+                </Box>
+            </Box>
+            <Box id="6"/>
+            <Box id="99"/>
+            <Item id="5"/>
+        </Box>
+        <Item id="6"/>
+        <Box id="8">
+            <Item id="10"/>
+            <Item color="red" id="12"/>
+            <Box id="13">
+                <Item id="13" color="red"/>
+                <Item id="14" color="black"/>
+                <Item id="17" color="red"/>
+            </Box>
+            <Box id="16"/>
+            <Box id="199"/>
+            <Item id="15"/>
+        </Box>
+    </Box>
+</Storage>
