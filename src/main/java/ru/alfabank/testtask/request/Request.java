@@ -4,6 +4,6 @@ import lombok.Data;
 
 @Data
 public class Request {
-    private Long box;
+    private Long boxId;
     private String color;
 }

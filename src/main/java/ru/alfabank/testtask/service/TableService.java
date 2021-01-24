@@ -9,10 +9,17 @@ import ru.alfabank.testtask.model.Item;
 
 @Service("TableService")
 public class TableService {
-    @Autowired
     BoxRepository boxRepository;
-    @Autowired
     ItemRepository itemRepository;
+
+    @Autowired
+    public void setBoxRepository(BoxRepository boxRepository) {
+        this.boxRepository = boxRepository;
+    }
+    @Autowired
+    public void setItemRepository(ItemRepository itemRepository) {
+        this.itemRepository = itemRepository;
+    }
 
     public void saveBox(Box box) {
         boxRepository.save(box);
@@ -20,5 +27,9 @@ public class TableService {
 
     public void saveItem(Item item) {
         itemRepository.save(item);
+    }
+
+    public Box getBox(Long id){
+        return boxRepository.getOne(id);
     }
 }

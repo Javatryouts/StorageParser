@@ -19,8 +19,13 @@ import java.util.HashSet;
 
 @Service("ParserService")
 public class ParserService {
-    @Autowired
+
     private TableService tableService;
+
+    @Autowired
+    public void setTableService(TableService tableService) {
+        this.tableService = tableService;
+    }
 
     public void parseXml(InputStream inputStream) {
         Document document = null;
