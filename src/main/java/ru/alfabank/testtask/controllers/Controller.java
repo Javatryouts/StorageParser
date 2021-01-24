@@ -17,7 +17,7 @@ public class Controller {
     BoxRepository boxRepository;
 
     @PostMapping("/")
-    public List<Long> getBoxes(@RequestBody Request request) {
+    public List<Long> getItems(@RequestBody Request request) {
         Box box = boxRepository.getOne(request.getBox());
         List<Long> result = new ArrayList<>();
         box.findItemsByColor(request.getColor(), result);
