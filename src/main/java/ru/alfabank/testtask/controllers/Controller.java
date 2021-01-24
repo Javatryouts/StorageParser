@@ -31,6 +31,6 @@ public class Controller {
     }
     @ExceptionHandler
     public String handleException(Exception ex){
-        return "Error!";
+        return "Error! " + ex.getMessage();
     }
 }
